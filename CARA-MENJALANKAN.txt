@@ -1,0 +1,19 @@
+CARA MENJALANKAN
+================
+A) LOKALHOST CEPAT (tanpa Node) — file SLR-Platform-Local.html (terpisah)
+   - Klik dua kali di browser (Chrome), atau: python -m http.server 8000
+     lalu buka http://localhost:8000/SLR-Platform-Local.html
+B) MODE DEV (Node 18+): npm install lalu npm run dev -> http://localhost:3000
+C) DEPLOY VERCEL: unggah isi folder slr-v3 ke GitHub.
+
+YANG BARU
+   - Naskah (tab Naskah): tidak lagi terpotong (batas token dinaikkan ke 8000).
+     Untuk tabel/gambar hanya ditulis penanda: (Letakkan Tabel N di sini) /
+     (Letakkan bagan PRISMA di sini) / (Letakkan Gambar N di sini).
+   - Framework AI: tanpa karangan (kategori kosong dibiarkan kosong, tidak diisi
+     tebakan). Diagram unduhan kini punya KOTAK pengelompokan per kategori,
+     panah jelas, dan PANAH PUTUS-PUTUS untuk MODERATOR. Mediator hanya muncul
+     bila benar-benar ada.
+   - Bibliometrik: tombol "Cetak/PDF" dihapus. Setiap tabel punya tombol
+     "Unduh Word" sendiri (A4, Times New Roman, rapi & ringkas).
+   - PRISMA: tombol "Download Word" dihapus (gunakan unduhan gambar SVG/PNG).
